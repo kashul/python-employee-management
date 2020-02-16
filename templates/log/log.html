@@ -42,33 +42,5 @@
 
     </div>
 
-    <script>
-        $(function() {
-
-            if (localStorage.chkbx && localStorage.chkbx != '') {
-                $('#remember_me').attr('checked', 'checked');
-                $('#email').val(localStorage.usrname);
-                $('#password').val(localStorage.pass);
-            } else {
-                $('#remember_me').removeAttr('checked');
-                $('#email').val('');
-                $('#password').val('');
-            }
-
-            $('#remember_me').click(function() {
-                console.log("work");
-                if ($('#remember_me').is(':checked')) {
-                    // save username and password
-                    localStorage.usrname = $('#email').val();
-                    localStorage.pass = $('#password').val();
-                    localStorage.chkbx = $('#remember_me').val();
-                } else {
-                    localStorage.usrname = '';
-                    localStorage.pass = '';
-                    localStorage.chkbx = '';
-                }
-            });
-        });
-
-    </script>
+   
 {% endblock content %}

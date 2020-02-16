@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/log/views.py" line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2d6ecbc-5a30-4c46-81c6-f8ef9328af8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log/log.html" afterDir="false" />
-    </list>
+    <list default="true" id="a2d6ecbc-5a30-4c46-81c6-f8ef9328af8c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +37,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="98" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="2" />
+          <entry key="js" value="3" />
           <entry key="py" value="210" />
         </counts>
       </usages-collector>
@@ -48,21 +46,21 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="98" />
           <entry key="Image" value="5" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="3" />
           <entry key="Python" value="210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2" />
-          <entry key="html" value="3535" />
+          <entry key="html" value="3542" />
           <entry key="py" value="4579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="3535" />
+          <entry key="HTML" value="3542" />
           <entry key="Python" value="4579" />
         </counts>
       </usages-collector>
@@ -91,11 +89,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/log/log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="504">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="e#1176#1200#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -267,7 +279,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581883920157" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581884224237" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../new/assignment-spemai" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -342,12 +354,12 @@
       <workItem from="1581713337867" duration="2165000" />
       <workItem from="1581758601771" duration="271000" />
       <workItem from="1581758937294" duration="1806000" />
-      <workItem from="1581782349248" duration="28544000" />
+      <workItem from="1581782349248" duration="28848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219830000" />
+    <option name="totallyTimeSpent" value="220134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,9 +528,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/media/logos/IMG_20200107_221048.jpg" />
     <entry file="file://$PROJECT_DIR$/log/tests.py">
@@ -707,8 +716,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/log/log.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state relative-caret-position="504">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="e#1176#1200#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
