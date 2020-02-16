@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="d-flex justify-content-center h-100">
+        <div class="jumbotron" style=" background-color: #5b80b2;margin-top: 40px;width: 100%;opacity: 0.9">
+<form action="http://127.0.0.1:8000/company/form/{{ company.pk }}" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{#{{ forms }}#}
+    <div style="margin-bottom: 30px" class="form-row col-md-12 ">
+        <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{ company.name }}" placeholder="EX:Kasul">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" value="{{ company.email }}" placeholder="Ex:Kasun@cde.com">
+        </div>
+    </div>
+    <div style="margin-bottom: 30px" class="form-row col-md-12 ">
+        <div class="form-group col-md-8">
+            <label for="website">Web Site</label>
+            <input type="text" class="form-control" id="website" name="website" value="{{ company.website }}" placeholder="Ex:abc.com">
+        </div>
+    </div >
+    <div class="form-row col-md-12 ">
+        <div class="form-group col-md-4 in">
+        {{ forms.logo }}
+        </div>
+
+
+    </div>
+
+
+    <div class="form-row col-md-12 ">
+
+        <button class="btn btn-success" type="submit"><i class="fas fa-database"></i> submit</button>
+        <a style="margin-left: 65%" class="btn btn-light" href=" http://127.0.0.1:8000/company/list"><i class="fas fa-arrow-circle-left"></i> List</a>
+    </div>
+{#    <button class="btn btn-success" type="submit"><i class="fas fa-database"></i> submit</button>#}
+{#<button type="submit">submit</button>#}
+{#<button type="button"><a href="{% url "list" %}" >back To List</a></button>#}
+{#    <button type="button"><a href="http://127.0.0.1:8000/compaby/list" >back To List</a></button>#}
+</form>
+        </div>
+    </div>
+
+{% endblock content %}

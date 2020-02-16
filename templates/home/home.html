@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a style="position: absolute; top: 10px; right: 5%;opacity: 0.9" href="http://127.0.0.1:8000/log/logout" class="btn btn-light btn-sm">
+        <span class="  glyphicon-log-out"></span> Log out
+    </a>
+    <div class="d-flex justify-content-center h-100" >
+
+ {% csrf_token %}#}
+            <span style="height: 200px;position: relative;align-content: center;margin-top: 300px;">
+                <button style="opacity:0.8;height: 200px;width: 200px;margin-right:40px;border-radius: 25px"><a href="http://127.0.0.1:8000/company/list"><i style="color: dimgrey" class="fas fa-building fa-7x"></i><div>company</div></a></button>
+                <button  style="opacity:0.8;height: 200px;width: 200px;border-radius: 25px"><a href="http://127.0.0.1:8000/employee/list"><i style="color: dimgrey" class="fas fa-users fa-7x"></i><div>emplyee</div></a></button>
+            </span>
+
+        </div>
+
+{% endblock content %}

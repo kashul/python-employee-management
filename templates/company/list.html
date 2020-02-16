@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <a style="position: absolute; top: 10px; right: 5%;opacity: 0.9" href="http://127.0.0.1:8000/log/logout" class="btn btn-outline-info btn-sm">
+        <span class="  glyphicon-log-out"></span> Log out
+    </a>
+    <div class="d-flex justify-content-center h-100">
+        <div class="jumbotron" style=" background-color: #5b80b2;margin-top: 40px;width: 100%;opacity: 0.9">
+            <h1 style="height:100px;text-align: center;">Company List</h1>
+<table class=" table table-borderless">
+<thead class="border-bottom-0 font-weight-bold">
+<td>name</td>
+<td>email</td>
+<td>website</td>
+<td >logo</td>
+<td><a style="margin-bottom: 10px; margin-top: 5px" class="btn btn-outline-dark" href="http://127.0.0.1:8000/company/form/0"><i class="fas fa-plus"></i> add company</a>
+    <a style="margin-left: 20px;margin-top: -5px"   class="btn btn-outline-dark" href=" http://127.0.0.1:8000/log/home"><i class="fas fa-arrow-circle-left"></i> Home</a></td>
+{#<td><a href="{% url "update" 0%}" >add Company</a></td>#}
+
+</thead>
+<tbody>
+{% for company in companies %}
+    <tr>
+    <td>{{company.name }}</td>
+    <td>{{company.email }}</td>
+    <td>{{company.website }}</td>
+
+    <td><img width="100px" height="100px" src="{{ company.logo.url }}" alt="image not found" ></td>
+
+    <td>
+        <a href="http://127.0.0.1:8000/company/form/{{ company.pk}} "><i class="far  fa-edit" style=""></i></a>
+        <form class="d-inline" action="http://127.0.0.1:8000/company/delete/{{company.pk }}" method="post">
+{#        <a href="{% url 'update' company.id %} ">edit</a>#}
+{#        <form action="{% url 'delete' company.id %}" method="post">#}
+            {% csrf_token %}
+{#            <button type="submit">delete</button>#}
+            <button  class="btn btn-outline-danger align-right" style="margin-left: 20px" type="submit"><i class=" far fa-trash-alt fa-lg text-danger float-right"></i></button>
+        </form>
+
+    </td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
+        </div>
+    </div>
+{% endblock content %}
